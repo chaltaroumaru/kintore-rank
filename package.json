@@ -36,7 +36,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "start:tunnel": "node scripts/tunnel.cjs"
+    "start:tunnel": "node scripts/tunnel.cjs",
+    "build:web": "expo export --platform web && node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html');require('fs').writeFileSync('dist/.nojekyll','')\"",
+    "deploy:web": "npm run build:web && node scripts/deploy-pages.cjs"
   },
   "private": true
 }
