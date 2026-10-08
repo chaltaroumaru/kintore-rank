@@ -32,6 +32,12 @@ npm start
 
 スマホの Expo Go アプリで QR コードを読み取ると実機で動きます。ブラウザで確認する場合は `npm run web`。
 
+## Web 版 (GitHub Pages)
+
+公開URL: https://chaltaroumaru.github.io/kintore-rank/
+
+更新するときは `npm run deploy:web` (ビルドして `gh-pages` ブランチへ push)。
+
 ## 通知設定
 
 プロフィール画面の「通知設定」で ON/OFF・端末の許可・テスト通知を確認できます (ローカル通知・Expo Go で動作 / Web 非対応)。
